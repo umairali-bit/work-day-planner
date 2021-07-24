@@ -26,6 +26,31 @@ function currentDate() {
         
     
     });
+        
+         
+    var storageInput = document.querySelector(".storage");
+    var textEl = document.querySelector(".text");
+    var saveBtnEl = document.querySelector(".saveBtn");
+    var storedInput = localStorage.getItem("textInput")
+
+    if (storageInput){
+        textEl.textContent=storedInput;
+    }
+
+    storageInput.addEventListener("input", letter =>{
+        textEl.textContent=letter.target.value
+    })
+
+    const saveToLocalStorage=() =>{
+        localStorage.setItem("textInput",textEl.textContent)
+
+    }
+    saveBtnEl.addEventListener("click",  saveToLocalStorage)
+
+
+   localStorage.clear();
+
+
    
 }
 
@@ -39,6 +64,7 @@ function currentDate() {
 
 
 timer();
+
 
 
 
