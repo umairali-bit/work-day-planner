@@ -1,47 +1,46 @@
+var myVar = setInterval(currentDate, 1000);
+function currentDate() {
+    
+    var date = new Date(); 
+    $("#currentDate").html(date);
 
-$("document").ready(function () {
-    //I hope to god this displays date and time
-    $('#currentDay').text(moment().format('dddd, MMMM Do, YYYY'))
-    var currentTime = moment();
+    
+}
+   
     function timer(){
+        let currentTime = moment().hour();
         
         $(".text").each(function() {
     
-        var hour = $(this).parent().attr("id")
-    
-        if (hour > currentTime) {
-            $(this).addClass("future")
-        } else if (hour == currentTime) {
-            $(this).addClass("present")
+        var hourText = $(this).siblings().attr("id")
+        console.log(hourText);   
+        if (hourText > currentTime) {
+            $(this).addClass("future");
+            
+        } else if (hourText == currentTime) {
+            $(this).addClass("present");
         } else {
-            $(this).addClass("past")
+            $(this).addClass("past");
         }
     
-    
+        
     
     });
    
 }
-console.log(moment());
-setInterval(function () {
-    taskColors()
-}, (1000*60)* 10)
 
 
-$(".saveBtn").on("click", function () {
-    // Get nearby values of the description in JQuery
-    var text = $(this).siblings(".text").val();
-    var time = $(this).parent().attr("id");
 
-    // Save text in local storage
-    localStorage.setItem(time, text);
+
+
+
+   
     
-})
 
-$("hours .text").val(localStorage.getItem("hour"));
+
 timer();
 
-})
+
 
 
 

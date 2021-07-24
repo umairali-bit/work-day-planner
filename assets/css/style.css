@@ -11,7 +11,10 @@ body {
     color: #000000;
     border-left: 1px solid black;
     border-top:1px solid white;
+    border-bottom: 1px solid white;
     padding: 10px;
+    height:75px;
+
    
   }
   
@@ -60,15 +63,20 @@ body {
   }
   
   .saveBtn {
-    border-left: 1px solid black;
-    border-bottom: 2px solid white;
+    border: 1px solid white;
+    border-bottom: 1px solid white;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #06AED5;
     color: white;
+    height: 75px;
+    outline: none;
+    
   }
   
-  .saveBtn img:hover {
+  .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
+    
+    
   }
