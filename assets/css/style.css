@@ -80,3 +80,47 @@ body {
     
     
   }
+  @media screen and (max-width: 1391px){
+    .display-3 {
+     font-size: 50px;
+  }
+    .lead {
+      font-size: 30px;
+    }
+    .text{
+    width: 100%;
+    }  
+  }
+   
+  @media screen and (max-width: 991px){
+    .display-3 {
+     font-size: 50px;
+  }
+    .lead {
+      font-size: 20px;
+    }
+    .text {
+    width: 100%;
+    } 
+  }
+  
+  @media screen and (max-width: 575px){
+    .display-3 {
+     font-size: 30px;
+  }
+    .lead {
+      font-size: 15px;
+    }
+    .text{
+    width: 30%;
+    }
+  .col-1 {
+  
+    font-size: small;
+  }
+  .container {
+    width: 97%;
+    }
+  
+  
+  }
