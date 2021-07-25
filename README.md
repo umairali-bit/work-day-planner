@@ -1,4 +1,4 @@
-# workDayPlanner
+# Work-Day-Planner
 
 
 ## **DESCRIPTION**
@@ -7,3 +7,5 @@ Work-Day-Planner could be used on regular basis to create a schedule. When the u
 
 
 ![Screen shot](/assets/images/_Users_umairali_Rutgers_Projects_workDayPlanner_index.html%20(2).png)
+
+[Visit Page](https://umairali-bit.github.io/work-day-planner/ "work-day-planner")
